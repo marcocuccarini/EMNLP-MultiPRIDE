@@ -18,6 +18,5 @@ class TextDataset:
 
     def filter_dataset_notclass(self):
 
-        self.dataset_filter = self.dataset[self.dataset['NOTCLASS']=="NO"].reset_index(inplace=True)
-
+        self.dataset_filter = self.dataset[self.dataset['NOTCLASS']=="NO"].reset_index(drop=True)
 
